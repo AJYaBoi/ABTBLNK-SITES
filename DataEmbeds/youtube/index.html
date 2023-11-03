@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Redirect to YouTube</title>
+    <title>Redirect to YouTube in a New Tab</title>
 </head>
 <body>
 
 <script type="text/javascript">
-    function redirectToYouTube() {
-        window.location.href = "https://www.youtube.com";
+    function openYouTubeInNewTab() {
+        window.open("https://www.youtube.com", "_blank");
     }
 
-    window.onload = redirectToYouTube;
+    window.onload = openYouTubeInNewTab;
 </script>
 
 </body>
