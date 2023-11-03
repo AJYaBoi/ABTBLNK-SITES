@@ -1,28 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>YouTube CSP Message</title>
 </head>
 <body>
-  <script>
-    // Function to open the URL in a new window
-    function openURL() {
-      var url = "https://www.youtube.com"; // Change this URL to the desired one
-      if (url) {
-        var win = window.open();
-        win.document.body.style.margin = '0';
-        win.document.body.style.height = '100vh';
-        var iframe = win.document.createElement('iframe');
-        iframe.style.border = 'none';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.margin = '0';
-        iframe.src = url;
-        win.document.body.appendChild(iframe);
-      }
-    }
-
-    // Attach the openURL function to the window.onload event
-    window.onload = openURL;
-  </script>
+    <div style="text-align: center; padding: 50px;">
+        <h1>This content cannot be displayed</h1>
+        <p>Due to YouTube's Content Security Policy (CSP) settings, this content cannot be embedded here.</p>
+        <p>You can visit <a href="https://www.youtube.com" target="_blank">YouTube</a> directly to view the content.</p>
+    </div>
 </body>
 </html>
